@@ -1,0 +1,24 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# AI conversation memory
+conversation.json
+.file_manager_agent/
+
+# Logs
+*.log
+
+# Editor and operating system files
+.vscode/
+.DS_Store
