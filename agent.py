@@ -7,10 +7,10 @@ from fastmcp.client.transports import StdioTransport
 from pydantic_ai.models.openai import OpenAIChatModel
 from pydantic_ai.providers.openai import OpenAIProvider
 
-WORKSPACE = Path(r"C:\Users\Strai\Downloads")
+WORKSPACE = Path.home() / "Downloads"
 
 HISTORY_FILE = (
-    Path.home() / "Downloads"
+    Path.home() / ".file_manager_agent" / "conversation.json"
 )
 # Connect to the existing filesystem MCP server
 filesystem = MCPToolset(
